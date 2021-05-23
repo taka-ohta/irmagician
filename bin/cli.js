@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
-const irMagician = require("../lib/irMagician")
-const meow = require("meow")
+import { irMagician } from "../lib/irMagician.js";
+import meow from "meow";
 const cli = meow(`
 Usage: irMagician <command> [file] 
 
@@ -22,7 +22,9 @@ Examples
     irMagician dump data.json
     irMagician write data.json
     
-`, {})
+`, {
+    importMeta: import.meta,
+})
 
 switch (cli.input[0]) {
 case "capture":
