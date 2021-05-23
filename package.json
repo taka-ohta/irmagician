@@ -2,11 +2,12 @@
   "name": "irmagician",
   "version": "0.0.3",
   "description": "CLI Tool for irMagician",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git@github.com:tamaki-shingo/irmagician.git"
   },
@@ -17,12 +18,12 @@
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
-    "colors": "^1.1.2",
-    "meow": "^3.7.0",
-    "serialport": "^3.0.0"
+    "colors": "^1.4.0",
+    "meow": "^10.0.0",
+    "serialport": "^9.0.7"
   },
   "devDependencies": {
-    "eslint": "^2.11.0"
+    "eslint": "^7.27.0"
   },
   "bin": {
     "irMagician": "bin/cli.js"
